@@ -1,22 +1,10 @@
-# SendGrid
-Send emails from Nodejs with SendGrid.
-Furthermore, there are an example of how attach a pdf file.
+# SendGrid desde Node.js
 
-## Config a .env file
+Ejemplo que envía un correo con un PDF adjunto.
 
-```bash
-SENDGRID_API_KEY = TOKEN_GENERATED_IN_SENDGRID
-EMAIL_SENDER = example@email.com
-```
+1. Ejecutar `npm ci`.
+2. Crear `.env` con `SENDGRID_API_KEY` y `EMAIL_SENDER` (remitente verificado en SendGrid).
+3. Colocar el PDF en `src/test.pdf` y ajustar destinatarios, asunto y cuerpo en `src/index.js`.
+4. Ejecutar `npm run dev`: envía el correo una sola vez.
 
-## Use the following command to init the code
-
-```bash
-npm install
-```
-
-## Use the following command to run the code
-
-```bash
-npm run dev
-```
+`npm test` es un marcador sin pruebas. Licencia: [MIT](LICENSE).
